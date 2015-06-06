@@ -25,14 +25,14 @@
     
     self.window = [[UIWindow alloc ]initWithFrame:[UIScreen mainScreen].bounds];
     
-    //login入口
-//    XHLoginViewController *loginVC = [[XHLoginViewController alloc]init];
-//    [self.window setRootViewController:loginVC];
+//    login入口
+    XHLoginViewController *loginVC = [[XHLoginViewController alloc]init];
+    [self.window setRootViewController:loginVC];
     
 //    // tabbar 入口
-    XHTabBarViewController *tabVC = [[XHTabBarViewController alloc]init];
-    [self.window setRootViewController:tabVC];
-    
+//    XHTabBarViewController *tabVC = [[XHTabBarViewController alloc]init];
+//    [self.window setRootViewController:tabVC];
+//    
     [self.window makeKeyAndVisible];
     return YES;
 }
