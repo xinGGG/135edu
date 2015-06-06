@@ -25,6 +25,7 @@
 		217656CF1B2280B2003BC224 /* XHPassView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 217656CE1B2280B2003BC224 /* XHPassView.xib */; };
 		217CBB591B2303DF005B25A7 /* XHAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 217CBB571B2303DF005B25A7 /* XHAboutViewController.m */; };
 		217CBB5A1B2303DF005B25A7 /* XHAboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 217CBB581B2303DF005B25A7 /* XHAboutViewController.xib */; };
+		217CBB5D1B23273B005B25A7 /* XHWebViewForWWW.m in Sources */ = {isa = PBXBuildFile; fileRef = 217CBB5C1B23273B005B25A7 /* XHWebViewForWWW.m */; };
 		2198DF731B22C2E000F73C69 /* XHFeedbackViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2198DF711B22C2E000F73C69 /* XHFeedbackViewViewController.m */; };
 		2198DF741B22C2E000F73C69 /* XHFeedbackViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2198DF721B22C2E000F73C69 /* XHFeedbackViewViewController.xib */; };
 		2198DF7E1B22CE0B00F73C69 /* XHSettingMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2198DF7D1B22CE0B00F73C69 /* XHSettingMainViewController.m */; };
@@ -99,6 +100,8 @@
 		217CBB561B2303DF005B25A7 /* XHAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHAboutViewController.h; sourceTree = "<group>"; };
 		217CBB571B2303DF005B25A7 /* XHAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHAboutViewController.m; sourceTree = "<group>"; };
 		217CBB581B2303DF005B25A7 /* XHAboutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XHAboutViewController.xib; sourceTree = "<group>"; };
+		217CBB5B1B23273B005B25A7 /* XHWebViewForWWW.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHWebViewForWWW.h; sourceTree = "<group>"; };
+		217CBB5C1B23273B005B25A7 /* XHWebViewForWWW.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHWebViewForWWW.m; sourceTree = "<group>"; };
 		2198DF701B22C2E000F73C69 /* XHFeedbackViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHFeedbackViewViewController.h; sourceTree = "<group>"; };
 		2198DF711B22C2E000F73C69 /* XHFeedbackViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHFeedbackViewViewController.m; sourceTree = "<group>"; };
 		2198DF721B22C2E000F73C69 /* XHFeedbackViewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XHFeedbackViewViewController.xib; sourceTree = "<group>"; };
@@ -260,6 +263,8 @@
 				217CBB561B2303DF005B25A7 /* XHAboutViewController.h */,
 				217CBB571B2303DF005B25A7 /* XHAboutViewController.m */,
 				217CBB581B2303DF005B25A7 /* XHAboutViewController.xib */,
+				217CBB5B1B23273B005B25A7 /* XHWebViewForWWW.h */,
+				217CBB5C1B23273B005B25A7 /* XHWebViewForWWW.m */,
 			);
 			name = "About关于";
 			sourceTree = "<group>";
@@ -747,6 +752,7 @@
 				217656CD1B228082003BC224 /* XHPassView.m in Sources */,
 				212512B91B2017DF00A22378 /* XHSettingItemSwitch.m in Sources */,
 				21CB1B0F1B1F267C0058FE55 /* IQKeyboardManager.m in Sources */,
+				217CBB5D1B23273B005B25A7 /* XHWebViewForWWW.m in Sources */,
 				21CB1B121B1F267C0058FE55 /* IQTitleBarButtonItem.m in Sources */,
 				21CB1A711B1F0BA10058FE55 /* XHLoginViewController.m in Sources */,
 				21CB1A271B1EF0CD0058FE55 /* main.m in Sources */,

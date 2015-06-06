@@ -7,14 +7,45 @@
 //
 
 #import "XHAboutViewController.h"
+#import "XHNavigationController.h"
+#import "XHWebViewForWWW.h"
+#import "MBProgressHUD+MJ.h"
 
-@interface XHAboutViewController ()
+@interface XHAboutViewController ()<UIAlertViewDelegate>
 @property (weak, nonatomic) IBOutlet UIImageView *logo;
 
 @end
 
 @implementation XHAboutViewController
+- (IBAction)wwwClick:(id)sender {
 
+    XHWebViewForWWW *web = [[XHWebViewForWWW alloc]init];
+    web.view.backgroundColor =[UIColor whiteColor];
+    XHNavigationController *nav = [[XHNavigationController alloc] initWithRootViewController:web];
+    [self presentViewController:nav animated:YES completion:nil];
+}
+- (IBAction)callClick:(id)sender {
+    
+    
+    UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"是否拨打客服电话" message:@"020-83821115" delegate:self cancelButtonTitle:@"否" otherButtonTitles:@"是", nil];
+    alert.delegate = self;
+    [alert show];
+    }
+
+
+- (void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex {
+    if (!buttonIndex)return;
+#warning 真机调试 拨打电话
+    
+    UIWebView*callWebview =[[UIWebView alloc] init];
+    NSURL *telURL =[NSURL URLWithString:@"tel:020-8382115"];
+    [callWebview loadRequest:[NSURLRequest requestWithURL:telURL]];
+    //记得添加到view上
+    [self.view addSubview:callWebview];
+    NSLog(@"正在拨打电话");
+        [MBProgressHUD  showSuccess:@"拨打电话"];
+
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.

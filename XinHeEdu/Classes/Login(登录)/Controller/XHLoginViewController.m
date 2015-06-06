@@ -154,6 +154,14 @@
 - (void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex {
     if (!buttonIndex)return;
 #warning 真机调试 拨打电话
+    
+    UIWebView*callWebview =[[UIWebView alloc] init];
+    NSURL *telURL =[NSURL URLWithString:@"tel:020-8382115"];
+    [callWebview loadRequest:[NSURLRequest requestWithURL:telURL]];
+    //记得添加到view上
+    [self.view addSubview:callWebview];
+    NSLog(@"正在拨打电话");
+    
     [MBProgressHUD  showSuccess:@"拨打电话"];
 }
 

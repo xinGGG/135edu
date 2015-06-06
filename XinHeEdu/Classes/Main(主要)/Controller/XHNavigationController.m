@@ -37,7 +37,7 @@
 
 + (void)setupNav {
     UINavigationBar *bar = [UINavigationBar appearance];
-    [bar setBarTintColor:[UIColor orangeColor]];
+    [bar setBarTintColor:[UIColor colorWithRed:244/255.0 green:98/255.0 blue:0 alpha:1]];
     NSDictionary *dict = @{NSFontAttributeName:[UIFont systemFontOfSize:22],
                            NSForegroundColorAttributeName:[UIColor whiteColor]
                            };

@@ -49,7 +49,7 @@
     
     //设置tabbaritem - select 属性
     NSDictionary *selDict = [NSDictionary dictionary];
-    selDict = @{NSForegroundColorAttributeName:[UIColor orangeColor]};
+    selDict = @{NSForegroundColorAttributeName:[UIColor colorWithRed:244/255.0 green:98/255.0 blue:0 alpha:1]};
     [vc.tabBarItem setTitleTextAttributes:selDict forState:UIControlStateSelected];
     
     //包装到navigation 里面
