@@ -23,6 +23,8 @@
 		213F14F31B21D6D600644785 /* XHPassWordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 213F14F21B21D6D600644785 /* XHPassWordViewController.m */; };
 		217656CD1B228082003BC224 /* XHPassView.m in Sources */ = {isa = PBXBuildFile; fileRef = 217656CC1B228082003BC224 /* XHPassView.m */; };
 		217656CF1B2280B2003BC224 /* XHPassView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 217656CE1B2280B2003BC224 /* XHPassView.xib */; };
+		217CBB591B2303DF005B25A7 /* XHAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 217CBB571B2303DF005B25A7 /* XHAboutViewController.m */; };
+		217CBB5A1B2303DF005B25A7 /* XHAboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 217CBB581B2303DF005B25A7 /* XHAboutViewController.xib */; };
 		2198DF731B22C2E000F73C69 /* XHFeedbackViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2198DF711B22C2E000F73C69 /* XHFeedbackViewViewController.m */; };
 		2198DF741B22C2E000F73C69 /* XHFeedbackViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2198DF721B22C2E000F73C69 /* XHFeedbackViewViewController.xib */; };
 		2198DF7E1B22CE0B00F73C69 /* XHSettingMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2198DF7D1B22CE0B00F73C69 /* XHSettingMainViewController.m */; };
@@ -94,6 +96,9 @@
 		217656CB1B228082003BC224 /* XHPassView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHPassView.h; sourceTree = "<group>"; };
 		217656CC1B228082003BC224 /* XHPassView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHPassView.m; sourceTree = "<group>"; };
 		217656CE1B2280B2003BC224 /* XHPassView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XHPassView.xib; sourceTree = "<group>"; };
+		217CBB561B2303DF005B25A7 /* XHAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHAboutViewController.h; sourceTree = "<group>"; };
+		217CBB571B2303DF005B25A7 /* XHAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHAboutViewController.m; sourceTree = "<group>"; };
+		217CBB581B2303DF005B25A7 /* XHAboutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XHAboutViewController.xib; sourceTree = "<group>"; };
 		2198DF701B22C2E000F73C69 /* XHFeedbackViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHFeedbackViewViewController.h; sourceTree = "<group>"; };
 		2198DF711B22C2E000F73C69 /* XHFeedbackViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHFeedbackViewViewController.m; sourceTree = "<group>"; };
 		2198DF721B22C2E000F73C69 /* XHFeedbackViewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XHFeedbackViewViewController.xib; sourceTree = "<group>"; };
@@ -247,6 +252,16 @@
 				213F14F21B21D6D600644785 /* XHPassWordViewController.m */,
 			);
 			name = "PassWord(修改密码)";
+			sourceTree = "<group>";
+		};
+		217CBB521B22FF03005B25A7 /* About关于 */ = {
+			isa = PBXGroup;
+			children = (
+				217CBB561B2303DF005B25A7 /* XHAboutViewController.h */,
+				217CBB571B2303DF005B25A7 /* XHAboutViewController.m */,
+				217CBB581B2303DF005B25A7 /* XHAboutViewController.xib */,
+			);
+			name = "About关于";
 			sourceTree = "<group>";
 		};
 		2198DF6F1B22C29400F73C69 /* Feedback(用户反馈) */ = {
@@ -542,6 +557,7 @@
 		21CB1A651B1EF21C0058FE55 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				217CBB521B22FF03005B25A7 /* About关于 */,
 				2198DF751B22CAE700F73C69 /* Setting(设置) */,
 				2198DF6F1B22C29400F73C69 /* Feedback(用户反馈) */,
 				213F14F01B21D53A00644785 /* PassWord(修改密码) */,
@@ -706,6 +722,7 @@
 				217656CF1B2280B2003BC224 /* XHPassView.xib in Resources */,
 				21CB1A321B1EF0CD0058FE55 /* Images.xcassets in Resources */,
 				213F14EB1B21B96F00644785 /* XHMineIconTableViewCell.xib in Resources */,
+				217CBB5A1B2303DF005B25A7 /* XHAboutViewController.xib in Resources */,
 				213CFC491B21708B0035C9D1 /* Mine.json in Resources */,
 				21CB1AF21B1F14E70058FE55 /* MBProgressHUD.bundle in Resources */,
 			);
@@ -735,6 +752,7 @@
 				21CB1A271B1EF0CD0058FE55 /* main.m in Sources */,
 				21CB1B151B1F267C0058FE55 /* UIView+Hierarchy.m in Sources */,
 				21CB1AF31B1F14E70058FE55 /* MBProgressHUD.m in Sources */,
+				217CBB591B2303DF005B25A7 /* XHAboutViewController.m in Sources */,
 				21CB1A681B1EF21C0058FE55 /* AppDelegate.m in Sources */,
 				213CFC4C1B2174FE0035C9D1 /* XHTitle2ContentTableViewCell.m in Sources */,
 				21CB1B161B1F267C0058FE55 /* UIView+IQKeyboardToolbar.m in Sources */,

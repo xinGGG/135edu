@@ -9,5 +9,7 @@
 #import "XHSettingItem.h"
 
 @interface XHSettingItemLabel : XHSettingItem
+@property(nonatomic,copy) NSString *value;
 
++ (instancetype)settingItemWithTitle:(NSString *)title defaults:(NSString *)defaults;
 @end

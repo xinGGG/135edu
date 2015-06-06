@@ -9,5 +9,12 @@
 #import "XHSettingItemLabel.h"
 
 @implementation XHSettingItemLabel
-
++ (instancetype)settingItemWithTitle:(NSString *)title defaults:(NSString *)defaults{
+    
+    XHSettingItemLabel *item = [self itemWithTitle:title];
+    if (item.value.length == 0 || item.value == nil) {
+        item.value = defaults;
+    }
+    return item;
+}
 @end

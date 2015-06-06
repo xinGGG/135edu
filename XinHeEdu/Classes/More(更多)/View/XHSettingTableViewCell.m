@@ -35,7 +35,7 @@
 - (UILabel *)labelView {
     if (_labelView == nil) {
         _labelView = [[UILabel alloc] init];
-        _labelView.font = [UIFont systemFontOfSize:14];
+        _labelView.font = [UIFont systemFontOfSize:16];
         _labelView.textAlignment = NSTextAlignmentRight;
 //        _labelView.textColor = CZColor(119,73,45);
         _labelView.frame = CGRectMake(0, 0, 80, 20);
@@ -116,7 +116,11 @@
         self.accessoryView = self.switchView;
         XHSettingItemSwitch *swi = (XHSettingItemSwitch *)_item;
         self.switchView.on = swi.on;
-    }
+    }else if([_item isKindOfClass:[XHSettingItemLabel class]]){
+        self.accessoryView = self.labelView;
+        XHSettingItemLabel *lab = (XHSettingItemLabel *)_item;
+        self.labelView.text = lab.value;
+        }
     else {
         self.accessoryType = nil;
         self.selectionStyle = UITableViewCellSelectionStyleNone;
