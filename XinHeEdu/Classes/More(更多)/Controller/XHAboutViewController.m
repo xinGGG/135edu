@@ -9,6 +9,7 @@
 #import "XHAboutViewController.h"
 
 @interface XHAboutViewController ()
+@property (weak, nonatomic) IBOutlet UIImageView *logo;
 
 @end
 
@@ -17,6 +18,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    self.edgesForExtendedLayout = UIRectEdgeNone;
+    self.logo.layer.cornerRadius = 16.0f;
+    self.logo.layer.masksToBounds = YES;
 }
 
 - (void)didReceiveMemoryWarning {
