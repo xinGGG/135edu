@@ -26,6 +26,7 @@
 		2198DF731B22C2E000F73C69 /* XHFeedbackViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2198DF711B22C2E000F73C69 /* XHFeedbackViewViewController.m */; };
 		2198DF741B22C2E000F73C69 /* XHFeedbackViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2198DF721B22C2E000F73C69 /* XHFeedbackViewViewController.xib */; };
 		2198DF7E1B22CE0B00F73C69 /* XHSettingMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2198DF7D1B22CE0B00F73C69 /* XHSettingMainViewController.m */; };
+		2198DF811B22D5BA00F73C69 /* XHSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2198DF801B22D5BA00F73C69 /* XHSettingViewController.m */; };
 		21A6CC0F1B1FF508004A480D /* XHBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A6CC0E1B1FF508004A480D /* XHBaseTableViewController.m */; };
 		21A6CC121B1FFFB7004A480D /* XHSettingGroups.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A6CC111B1FFFB7004A480D /* XHSettingGroups.m */; };
 		21A6CC211B200F09004A480D /* XHSettingItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A6CC201B200F09004A480D /* XHSettingItem.m */; };
@@ -98,6 +99,8 @@
 		2198DF721B22C2E000F73C69 /* XHFeedbackViewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XHFeedbackViewViewController.xib; sourceTree = "<group>"; };
 		2198DF7C1B22CE0B00F73C69 /* XHSettingMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHSettingMainViewController.h; sourceTree = "<group>"; };
 		2198DF7D1B22CE0B00F73C69 /* XHSettingMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHSettingMainViewController.m; sourceTree = "<group>"; };
+		2198DF7F1B22D5BA00F73C69 /* XHSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHSettingViewController.h; sourceTree = "<group>"; };
+		2198DF801B22D5BA00F73C69 /* XHSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHSettingViewController.m; sourceTree = "<group>"; };
 		21A6CC0D1B1FF508004A480D /* XHBaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHBaseTableViewController.h; sourceTree = "<group>"; };
 		21A6CC0E1B1FF508004A480D /* XHBaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHBaseTableViewController.m; sourceTree = "<group>"; };
 		21A6CC101B1FFFB7004A480D /* XHSettingGroups.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHSettingGroups.h; sourceTree = "<group>"; };
@@ -259,6 +262,8 @@
 		2198DF751B22CAE700F73C69 /* Setting(设置) */ = {
 			isa = PBXGroup;
 			children = (
+				2198DF7F1B22D5BA00F73C69 /* XHSettingViewController.h */,
+				2198DF801B22D5BA00F73C69 /* XHSettingViewController.m */,
 			);
 			name = "Setting(设置)";
 			sourceTree = "<group>";
@@ -753,6 +758,7 @@
 				213F14F31B21D6D600644785 /* XHPassWordViewController.m in Sources */,
 				21A6CC121B1FFFB7004A480D /* XHSettingGroups.m in Sources */,
 				21CB1B111B1F267C0058FE55 /* IQTextView.m in Sources */,
+				2198DF811B22D5BA00F73C69 /* XHSettingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

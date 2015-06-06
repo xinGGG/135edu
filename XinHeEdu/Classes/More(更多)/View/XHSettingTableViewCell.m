@@ -60,8 +60,9 @@
     return _switchView;
 }
 
-- (void)valueChanged{
-    
+- (void)valueChanged:(UISwitch *)sender{
+    XHSettingItemSwitch *item = (XHSettingItemSwitch *)_item;
+    item.on = sender.on;
 }
 + (instancetype)cellWithTableView :(UITableView *)tableView{
     
@@ -109,7 +110,14 @@
         self.cusView = cusView.custom;
         cusView.custom.frame =(CGRect) cusView.customFrame;
 
-    }else {
+    }else if([_item isKindOfClass:[XHSettingItemSwitch class]]){
+        self.selectionStyle = UITableViewCellSelectionStyleNone;
+        self.accessoryType =UITableViewCellAccessoryNone;
+        self.accessoryView = self.switchView;
+        XHSettingItemSwitch *swi = (XHSettingItemSwitch *)_item;
+        self.switchView.on = swi.on;
+    }
+    else {
         self.accessoryType = nil;
         self.selectionStyle = UITableViewCellSelectionStyleNone;
     }

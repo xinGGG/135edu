@@ -9,5 +9,6 @@
 #import "XHSettingItem.h"
 
 @interface XHSettingItemSwitch : XHSettingItem
+@property (nonatomic,assign)BOOL on;
 
 @end

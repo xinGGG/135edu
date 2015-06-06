@@ -19,6 +19,7 @@
 #import "XHMineTableViewController.h"
 #import "XHPassWordViewController.h"
 #import "XHFeedbackViewViewController.h"
+#import "XHSettingViewController.h"
 
 @interface XHSettingMainViewController ()<UIActionSheetDelegate>
 
@@ -34,7 +35,7 @@
     XHSettingItem *item1 =  [XHSettingItemArrow itemWithTitle:@"个人信息" desVC:[XHMineTableViewController class]];
     XHSettingItem *item2 = [XHSettingItemArrow itemWithTitle:@"修改密码" desVC:[XHPassWordViewController class]];
     XHSettingItem *item3 = [XHSettingItemArrow itemWithTitle:@"用户反馈" desVC:[XHFeedbackViewViewController class]];
-    XHSettingItem *item4 = [XHSettingItemArrow itemWithTitle:@"设置" desVC:[XHMineTableViewController class]];
+    XHSettingItem *item4 = [XHSettingItemArrow itemWithTitle:@"设置" desVC:[XHSettingViewController class]];
     XHSettingItem *item5 = [XHSettingItemArrow itemWithTitle:@"关于" desVC:[XHMineTableViewController class]];
 
     XHSettingGroups *group1 = [XHSettingGroups arrayWithItems:@[item1,item2,item3,item4,item5]];
